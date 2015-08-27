@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
 var Sandwich = {};
 
@@ -23,14 +22,13 @@ function getValues () {
     });
   }
   console.log(selections);
-  Sandwich.meat(details.meat);
-  Sandwich.bread(details.bread);
-  Sandwich.condiments(details.condiments);
-  Sandwich.cheese(details.cheese);
-  Sandwich.veggies(details.veggies);
+  Sandwich.meat(selections.meat);
+  Sandwich.bread(selections.bread);
+  Sandwich.condiments(selections.condiments);
+  Sandwich.cheese(selections.cheese);
+  Sandwich.veggies(selections.veggies);
 
 }
 
 button.addEventListener("click", getValues);
 
-});

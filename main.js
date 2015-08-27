@@ -13,7 +13,7 @@ var selections = {
 var details = ["bread","cheese","condiments","meat","veggies"];
 
 function getValues () {
-  for (var i = 0; i < details.length; i++) {
+  for (var i = 0; i < details.length ; i++) {
     var obj = $('input[name='+details[i]+']:checked');
     $(obj).each(function(index,type){
       selections[details[i]].push($(this).val());

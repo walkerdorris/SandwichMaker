@@ -9,8 +9,8 @@ var Sandwich = (function(sandwich) {
     sandwich.bread = function(input) {
       for (var i = 0; i < input.length; i++) {
         if (input[i] in choices) {
-          sandwich_here.innerHTML += input[i] + " " + choices[input[i]] + " ;";
-      
+          sandwich_here.innerHTML += input[i] + " " + choices[input[i]] + "; ";
+
     }
   }
 }

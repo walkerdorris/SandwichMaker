@@ -6,10 +6,10 @@ var Sandwich = (function(sandwich) {
       "brie": "$2.00"
     };
 
-    sandwichsection.cheese = function(input) {
+    sandwich.cheese = function(input) {
       for (var i = 0; i < input.length; i++) {
         if (input[i] in choices) {
-          sandwich_here.innerHTML += input[i] + " " + choices[i]] + " ;";
+          sandwich_here.innerHTML += input[i] + " " + choices[input[i]] + " ;";
       
     }
   }
